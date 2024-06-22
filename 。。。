@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英格兰神秘事件手记</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>英格兰神秘事件手记</h1>
+    <p>欢迎来到英格兰神秘事件手记！你将扮演一名年轻侦探，揭开一个充满谜团和神秘的故事。</p>
+    
+    <h2>选择你的第一个决定：</h2>
+    <button onclick="makeDecision(1)">前往庄园调查失踪事件</button>
+    <button onclick="makeDecision(2)">前往港口追踪神秘来信</button>
+    
+    <p id="story"></p>
+
+    <script>
+        function makeDecision(decision) {
+            if (decision === 1) {
+                document.getElementById('story').innerHTML = "你踏入庄园的大门，四处张望寻找线索。突然，一阵不祥的预感袭来...";
+            } else if (decision === 2) {
+                document.getElementById('story').innerHTML = "你来到拥挤忙碌的港口，逐一对比神秘来信的内容，试图找出其中真相...";
+            }
+            }
+    </script>
+</body>
+
+</html>
